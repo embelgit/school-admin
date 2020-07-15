@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>School Web Admin</title>
+<style>
+.heading {
+	font-family: 'Audiowide', cursive;
+	color: black;
+	font-size: 35px;
+	line-height: 0.8;
+	font-weight: 900;
+}
+
+.heading::first-letter {
+	color: #ff0000;
+	font-size: 50px;
+}
+
+.lookbok-section {
+	color: #ff0000;
+	font-size: 30px;
+}
+
+.lookbok-left p {
+	color: #807d84;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-bottom: 0px;
+	word-spacing: 5.1px;
+	display: inline-block;
+	text-transform: capitalize;
+}
+
+lable {
+	color: #0f0e10;
+	font-weight: 500;
+}
+
+a.active, a:hover, a:focus{
+color:green;background-color:transpernt;
+}
+.primary-btn {
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 10px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	text-transform: uppercase;
+}
+.primary-btn:hover {background-color: #3e8e41;color:#fff;}
+
+.primary-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.product-content {
+	padding: 20px 0;
+}
+
+.product-content .product-quantity {
+	display: inline-block;
+	margin-right: 10px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  b{
+  color:black;
+  }
+ </style>
+</head>
+<body>
+
+<section class="lookbok-section" id="shop" style="margin-top: 9%;margin-left: 45%;">
+<h2>Admin Page</h2>
+</section>
+
+<label> Select Class</label>
+<select name="studentclass" id="studClass">
+  <option value="select">Select Class</option>
+  <option value="class1">1st Standard</option>
+  <option value="class2">2nd Standard</option>
+  <option value="class3">3rd Standard</option>
+  <option value="class4">4th Standard</option>
+  <option value="class5">5th Standard</option>
+  <option value="class6">6th Standard</option>
+  <option value="class7">7th Standard</option>
+  <option value="class8">8th Standard</option>
+  <option value="class9">9th Standard</option>
+  <option value="class10">10th Standard</option>
+</select>
+<br><br>
+
+<label> Select Chapter</label>
+<select name="chaptername" id="chapterName">
+  <option value="select">Select Chapter</option>
+  <option value="chapter1">Chapter 1</option>
+  <option value="chapter2">Chapter 2</option>
+  <option value="chapter3">Chapter 3</option>
+  <option value="chapter4">Chapter 4</option>
+  <option value="chapter5">Chapter 5</option>
+  <option value="chapter6">Chapter 6</option>
+  <option value="chapter7">Chapter 7</option>
+  <option value="chapter8">Chapter 8</option>
+  <option value="chapter9">Chapter 9</option>
+  <option value="chapter10">Chapter 10</option>
+</select>
+<br><br>
+
+<label> Select Lesson</label>
+<select name="lessonname" id="lesson">
+  <option value="select">Select Lesson</option>
+  <option value="lesson1">Lesson 1</option>
+  <option value="lesson2">Lesson 2</option>
+  <option value="lesson3">Lesson 3</option>
+  <option value="lesson4">Lesson 4</option>
+  <option value="lesson5">Lesson 5</option>
+  <option value="lesson6">Lesson 6</option>
+  <option value="lesson7">Lesson 7</option>
+  <option value="lesson8">Lesson 8</option>
+  <option value="lesson9">Lesson 9</option>
+  <option value="lesson10">Lesson 10</option>
+</select>
+<br><br>
+
+<label> Topic Name</label>
+<input type="text" id="topic" name="topicname">
+<br><br>
+
+<button type="button" onclick="saveStudentAdminVal()" id="saveadmin">Submit</button>
+<br><br>
+<a th:href="@{'/userpage/'}">For User</a>
+</body>
+<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/jquery.magnific-popup.min.js}"></script>
+<script th:src="@{/js/jquery.slicknav.js}"></script>
+<script th:src="@{/js/owl.carousel.min.js}"></script>
+<script th:src="@{/js/jquery.nice-select.min.js}"></script>
+<script th:src="@{/js/mixitup.min.js}"></script>
+<script th:src="@{/js/main.js}"></script>
+<script th:src="@{/js/topfunction.js}"></script>
+<script th:src="@{/js/studentadmin.js}"></script>
+</html>

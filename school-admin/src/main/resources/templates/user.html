@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>School Web User</title>
+<style>
+.heading {
+	font-family: 'Audiowide', cursive;
+	color: black;
+	font-size: 35px;
+	line-height: 0.8;
+	font-weight: 900;
+}
+
+.heading::first-letter {
+	color: #ff0000;
+	font-size: 50px;
+}
+
+.lookbok-left p {
+	color: #807d84;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-bottom: 0px;
+	word-spacing: 5.1px;
+	display: inline-block;
+	    text-transform: capitalize;
+}
+
+lable {
+	color: #0f0e10;
+	font-weight: 500;
+}
+
+a.active, a:hover, a:focus{
+color:green;background-color:transpernt;
+}
+.primary-btn {
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 10px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	text-transform: uppercase;
+}
+.primary-btn:hover {background-color: #3e8e41;color:#fff;}
+
+.primary-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.product-content {
+	padding: 20px 0;
+}
+
+.lookbok-section {
+	color: green;
+	font-size: 30px;
+}
+
+.product-content .product-quantity {
+	display: inline-block;
+	margin-right: 10px;
+}
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  b{
+  color:black;
+  }
+ </style>
+</head>
+<body>
+
+<section class="lookbok-section" id="shop" style="margin-top: 9%;margin-left: 45%;">
+<h2>User Page</h2>
+</section>
+
+<label> Enter Class</label>
+<input type="text" id="userstudClass" name="studentclass">
+<br><br>
+<label> Enter Chapter</label>
+<input type="text" id="userchapterName" name="chaptername">
+<br><br>
+<label> Enter Lesson</label>
+<input type="text" id="userlesson" name="lessonname">
+<br><br>
+<label> Enter Topic</label>
+<input type="text" id="usertopic" name="topicname">
+<br><br>
+<button type="button" onclick="saveStudentUserVal()" id="saveuser">Submit</button>
+
+<!-- <a th:href="@{'/product/'}">Go To</a> -->
+</body>
+<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/jquery.magnific-popup.min.js}"></script>
+<script th:src="@{/js/jquery.slicknav.js}"></script>
+<script th:src="@{/js/owl.carousel.min.js}"></script>
+<script th:src="@{/js/jquery.nice-select.min.js}"></script>
+<script th:src="@{/js/mixitup.min.js}"></script>
+<script th:src="@{/js/main.js}"></script>
+<script th:src="@{/js/topfunction.js}"></script>
+<script th:src="@{/js/studentuser.js}"></script>
+</html>
