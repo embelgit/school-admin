@@ -1,0 +1,53 @@
+@charset "ISO-8859-1";
+
+user__wrapper{
+	margin:0 auto;
+	width:80%;
+	background-color:#eee;
+}
+
+.user__contanier{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap:20px;
+	padding:20px;
+}
+
+.user__form__field{
+	display:flex;
+	margin-top:40px;
+}
+
+.user__form__field__label{
+	flex:1
+}
+
+.user__field__input{
+	flex:2
+}
+
+#userstudClass ,#userchapterName ,#userlesson ,#usertopic{
+	width: 80%;
+	height:25px;
+}
+
+.user__submit__btn{
+	background-color:blue;
+	border:1px solid blue;
+	height:40px;
+	width:120px;
+	margin-top:58px;
+	margin-left:-36px;
+	color:white;
+	cursor:pointer;
+	padding:10px
+}
+
+.user_title {
+	color: green;
+	font-size: 30px;
+}
+
+@media screen and (max-width:768px) {
+	
+}

@@ -4,98 +4,59 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta charset="ISO-8859-1">
 <title>School Web User</title>
-<style>
-.heading {
-	font-family: 'Audiowide', cursive;
-	color: black;
-	font-size: 35px;
-	line-height: 0.8;
-	font-weight: 900;
-}
+<link rel="stylesheet" th:href="@{/css/UserStyle.css}">
 
-.heading::first-letter {
-	color: #ff0000;
-	font-size: 50px;
-}
-
-.lookbok-left p {
-	color: #807d84;
-	font-size: 18px;
-	line-height: 30px;
-	font-weight: 500;
-	margin-bottom: 0px;
-	word-spacing: 5.1px;
-	display: inline-block;
-	    text-transform: capitalize;
-}
-
-lable {
-	color: #0f0e10;
-	font-weight: 500;
-}
-
-a.active, a:hover, a:focus{
-color:green;background-color:transpernt;
-}
-.primary-btn {
-	color: #fff;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 600;
-	padding: 10px 10px;
-	border: 2px solid #fff;
-	border-radius: 50px;
-	text-transform: uppercase;
-}
-.primary-btn:hover {background-color: #3e8e41;color:#fff;}
-
-.primary-btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.product-content {
-	padding: 20px 0;
-}
-
-.lookbok-section {
-	color: green;
-	font-size: 30px;
-}
-
-.product-content .product-quantity {
-	display: inline-block;
-	margin-right: 10px;
-}
- .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-  b{
-  color:black;
-  }
- </style>
 </head>
 <body>
 
-<section class="lookbok-section" id="shop" style="margin-top: 9%;margin-left: 45%;">
+<section class="user_title" id="shop" style="margin-top: 9%;margin-left: 45%;">
 <h2>User Page</h2>
 </section>
 
-<label> Enter Class</label>
-<input type="text" id="userstudClass" name="studentclass">
-<br><br>
-<label> Enter Chapter</label>
-<input type="text" id="userchapterName" name="chaptername">
-<br><br>
-<label> Enter Lesson</label>
-<input type="text" id="userlesson" name="lessonname">
-<br><br>
-<label> Enter Topic</label>
-<input type="text" id="usertopic" name="topicname">
-<br><br>
-<button type="button" onclick="saveStudentUserVal()" id="saveuser">Submit</button>
+<div class="user__wrapper">
+	<div class="user__contanier">
+		<div class="user__leftside">
+			<div class="user__form__field">
+				<div class="user__form__field__label">
+					<label> Enter Class</label>
+				</div>
+				<div class="user__field__input">
+					<input type="text" id="userstudClass" name="studentclass">
+				</div>
+			</div>
+			<div class="user__form__field">
+				<div class="user__form__field__label">
+					<label> Enter Chapter</label>
+				</div>
+				<div class="user__field__input">
+					<input type="text" id="userchapterName" name="chaptername">
+				</div>
+			</div>
+	</div>
+	
+<div class="user__rightside">
+	<div class="user__form__field">
+		<div class="user__form__field__label">
+					<label > Enter Lesson</label>
+		</div>
+		<div class="user__field__input">		
+			<input type="text" id="userlesson" name="lessonname">
+		</div>
+	</div>
+<div class="user__form__field">
+	<div class="user__form__field__label">
+		<label >Enter Topic</label>
+	</div>
+	<div class="user__field__input">
+		<input type="text" id="usertopic" name="topicname">
+	</div>
+</div>
+
+<button type="button" class="user__submit__btn" onclick="saveStudentUserVal()" id="saveuser">Submit</button>
+</div>
+</div>
+</div>
+
 
 <!-- <a th:href="@{'/product/'}">Go To</a> -->
 </body>
